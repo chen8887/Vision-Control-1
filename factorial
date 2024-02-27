@@ -1,0 +1,10 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+name = input("Enter your name: ")
+number = int(input("Enter a number to calculate its factorial: "))
+result = factorial(number)
+print("Hello, " + name + "!")
+print("The factorial of " + str(number) + " is: " + str(result))
